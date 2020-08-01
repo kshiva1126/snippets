@@ -1,0 +1,2 @@
+r := mux.NewRouter()
+r.HandleFunc("/books/{category}/{id:[0-9]+}", BookHandler)

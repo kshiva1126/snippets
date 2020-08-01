@@ -1,0 +1,1 @@
+r.HandleFunc("/books/{category}/{id:[0-9]+}", BookHandler).Name("bookRoute")

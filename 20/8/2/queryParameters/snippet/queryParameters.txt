@@ -1,0 +1,2 @@
+r := mux.NewRouter()
+r.HandleFunc("/books", QueryHandler)

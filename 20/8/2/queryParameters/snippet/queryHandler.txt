@@ -1,0 +1,6 @@
+func QueryHandler(w http.ResponseWriter, r *http.Request) {
+	q := r.URL.Query()
+	w.WriteHeader(http.StatusOK)
+	fmt.Fprintf(w, "category: %s\n", q["category"][0])
+	fmt.Fprintf(w, "id: %s\n", q["id"][0])
+}

@@ -1,0 +1,2 @@
+url, _ := r.Get("bookRoute").URL("category", "history", "id", "1")
+fmt.Printf(url.Path) // /books/category/1
